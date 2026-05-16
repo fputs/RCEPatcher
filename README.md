@@ -11,8 +11,13 @@ on Linux, macOS, or Windows.
 RCEPatcher will inform you if `Wow.exe` is already patched. If not, it creates a backup called `Wow.exe.backup` and then
 patches `Wow.exe` in place.
 
-Build yourself and run
+Either download the executable for your OS and architecture from [the release page](https://git.burkey.co/eburk/RCEPatcher/releases/latest)
+or build yourself, then run the program. If you download the binary from the releases page, be aware that none of the
+binaries are codesigned or notarized and you may get security popups on your platform.
 ```shell
+# OPTIONAL: build yourself
 go build
+
+# Run RCEPatcher
 ./RCEPatcher /path/to/Wow.exe
 ```
